@@ -1,0 +1,125 @@
+:root {
+  --dark: #0b2447;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Roboto+Slab:wght@100..900&display=swap");
+
+/* Basic Navbar styles */
+.top-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 0 0 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  animation: navbarFade 1s ease forwards;
+}
+
+.scrolled {
+  background-color: var(--normal);
+}
+
+@keyframes navbarFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-nav-para {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+  color: var(--dark);
+  font-family: "Roboto Slab", serif;
+}
+
+.top-nav-para:hover {
+  cursor: pointer;
+}
+
+.top-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.top-nav-links a {
+  text-decoration: none;
+  font-family: "Darker Grotesque", sans-serif;
+  transition: color 0.3s ease;
+  margin: 0px 10px;
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.top-nav-links a:hover {
+  color: var(--light);
+}
+
+.top-nav-toggle {
+  display: none;
+  font-size: 30px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+/* Animation for links */
+.top-nav-links a {
+  animation: linkFade 0.5s ease forwards;
+}
+
+@keyframes linkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .top-nav-links {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--normal);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .top-nav-links.open {
+    transform: translateX(0);
+  }
+
+  .top-nav-toggle {
+    display: block;
+    z-index: 2000;
+  }
+}
