@@ -1,0 +1,88 @@
+:root {
+  --dark: #42446e;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+  --heading-font: "Roboto Slab", serif;
+  --para-font: "Darker Grotesque", sans-serif;
+}
+.about-section {
+  padding: 80px 0px;
+}
+.about-section h2 {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--heading-font);
+}
+.about-heading-line {
+  width: 5px;
+  height: 50px;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+.about-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-left-container img {
+  filter: drop-shadow(7px 7px 10px var(--normal));
+  height: 400px;
+  width: 400px;
+}
+.about-right-container div {
+  padding: 30px 0px;
+}
+.about-right-container button {
+  font-family: var(--para-font);
+  font-size: 25px;
+  padding: 5px 20px;
+  color: var(--dark);
+  text-align: center;
+  background-color: var(--normal);
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.about-right-container button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--dark);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+.about-right-container button:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.about-right-container {
+  padding: 80px 30px 0px 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-right-container p {
+  font-family: var(--para-font);
+  font-size: 20px;
+  padding: 0px 0px;
+  color: var(--dark);
+  text-align: center;
+}

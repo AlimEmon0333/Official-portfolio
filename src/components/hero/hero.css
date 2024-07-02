@@ -1,5 +1,5 @@
 :root {
-  --dark: #0b2447;
+  --dark: #42446e;
   --light: #576cbc;
   --normal: #a5d7e8;
 }
@@ -7,13 +7,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Roboto+Slab:wght@100..900&display=swap");
 
-.hero-left-cont  {
+.hero-left-cont {
   padding: 80px;
 }
-.hero-right-cont  {
-  padding: 50px;
-}
 .hero-left-cont img {
-  border: 2px solid var(--dark);
+  border: 3px solid var(--dark);
   border-radius: 50%;
+  box-shadow: 0px 0px 10px gray;
+}
+.hero-right-cont {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-right-cont .first-heading,
+.second-heading {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 45px;
+  color: var(--dark);
+}
+.hero-right-cont .third-heading {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 55px;
+  color: var(--light);
+}
+.hero-right-cont .type-writer {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 35px;
+  color: var(--dark);
+}
+@media (max-width: 768px) {
+  .hero-left-cont {
+    padding: 70px 30px 0px 30px;
+  }
+  .hero-right-cont {
+    padding: 70px 30px 0px 30px;
+    align-items: center;
+  }
+  .hero-right-cont .third-heading {
+    text-align: center;
+  }
+  .hero-right-cont .type-writer {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 22px;
+    color: var(--dark);
+  }
+}
+@media (max-width: 480px) {
+  .hero-left-cont {
+    padding: 70px 30px 0px 30px;
+  }
+  .hero-right-cont {
+    padding: 70px 30px 0px 30px;
+    align-items: center;
+  }
+   .hero-right-cont .third-heading {
+    text-align: center;
+  }
+  .hero-right-cont .type-writer {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 21px;
+    color: var(--dark);
+  }
 }

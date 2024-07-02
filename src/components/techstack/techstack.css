@@ -1,0 +1,124 @@
+:root {
+  --dark: #42446e;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+  --heading-font: "Roboto Slab", serif;
+  --para-font: "Darker Grotesque", sans-serif;
+}
+.tech-stack-section {
+  padding: 80px 0px;
+}
+.tech-stack-section h2 {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--heading-font);
+}
+.tech-stack-heading-line {
+  width: 5px;
+  height: 50px;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+.tech-stack-section p {
+  color: var(--light);
+  font-size: 30px;
+  font-family: var(--para-font);
+}
+.frontend-heading {
+  display: flex;
+}
+.frontend-heading h3 {
+  color: var(--dark);
+  font-size: 25px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.frontend-heading-line-icon {
+  color: var(--dark);
+  font-size: 35px;
+}
+.backend-heading {
+  display: flex;
+}
+.backend-heading h3 {
+  color: var(--dark);
+  font-size: 25px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.backend-heading-line-icon {
+  color: var(--dark);
+  font-size: 35px;
+}
+.others-heading {
+  display: flex;
+}
+.others-heading h3 {
+  color: var(--dark);
+  font-size: 25px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.others-heading-line-icon {
+  color: var(--dark);
+  font-size: 35px;
+}
+@media (max-width: 768px) {
+  .tech-stack-section h2 {
+    font-size: 27px;
+  }
+  .tech-stack-section p {
+    font-size: 22px;
+  }
+  .tech-stack-heading-line {
+    height: 32px;
+  }
+}
+@media (max-width: 488px) {
+  .tech-stack-section h2 {
+    font-size: 27px;
+  }
+  .tech-stack-section p {
+    font-size: 22px;
+  }
+  .tech-stack-heading-line {
+    height: 32px;
+  }
+  .frontend-heading h3 {
+    color: var(--dark);
+    font-size: 20px;
+    padding-left: 50px;
+    font-weight: lighter;
+  }
+  .frontend-heading-line-icon {
+    color: var(--dark);
+    font-size: 35px;
+  }
+  .backend-heading {
+    display: flex;
+  }
+  .backend-heading h3 {
+    color: var(--dark);
+    font-size: 20px;
+    padding-left: 50px;
+    font-weight: lighter;
+  }
+  .backend-heading-line-icon {
+    color: var(--dark);
+    font-size: 35px;
+  }
+  .others-heading {
+    display: flex;
+  }
+  .others-heading h3 {
+    color: var(--dark);
+    font-size: 25px;
+    padding-left: 50px;
+    font-weight: bold;
+  }
+  .others-heading-line-icon {
+    color: var(--dark);
+    font-size: 35px;
+  }
+}

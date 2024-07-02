@@ -1,5 +1,5 @@
 :root {
-  --dark: #0b2447;
+  --dark: #42446E;
   --light: #576cbc;
   --normal: #a5d7e8;
 }
@@ -13,12 +13,14 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 20px 0 0 0;
+  padding: 17px;
   transition: background-color 0.3s ease;
   z-index: 1000;
   animation: navbarFade 1s ease forwards;
 }
-
+.logo-icon{
+  color: var(--dark);
+}
 .scrolled {
   background-color: var(--normal);
 }

@@ -1,0 +1,144 @@
+:root {
+  --dark: #42446e;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+  --heading-font: "Roboto Slab", serif;
+  --para-font: "Darker Grotesque", sans-serif;
+}
+.projects-title {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--heading-font);
+}
+.project-heading-line {
+  width: 5px;
+  height: 50px;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+.projects-para {
+  color: var(--light);
+  font-size: 30px;
+  font-family: var(--para-font);
+}
+.project-card {
+  background-color: var(--normal);
+  border-radius: 20px;
+}
+.project-card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.project-card-content {
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.project-card-content h2 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  color: var(--dark);
+}
+.project-card-content .card-desc {
+  font-family: var(--para-font);
+  font-size: 22px;
+}
+.project-card-content .card-tech {
+  font-family: var(--para-font);
+  font-size: 22px;
+}
+.github-link .ico {
+  color: var(--dark);
+}
+.github-link span a {
+  color: var(--dark);
+  text-decoration: none;
+  padding-right: 20px;
+}
+.live-preview-link .ico {
+  color: var(--dark);
+}
+.live-preview-link span a {
+  color: var(--dark);
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 30px;
+  }
+  .projects-para {
+    font-size: 25px;
+  }
+  .project-card {
+    margin: 20px 0px;
+  }
+  .project-card-content h2 {
+    font-size: 25px;
+  }
+  .project-card-content .card-desc {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .project-card-content .card-tech {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .github-link .ico {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .github-link span a {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 20px;
+  }
+  .live-preview-link .ico {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .live-preview-link span a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 488px) {
+  .projects-title {
+    font-size: 30px;
+  }
+  .projects-para {
+    font-size: 25px;
+  }
+  .project-card {
+    margin: 20px 0px;
+  }
+  .project-card-content h2 {
+    font-size: 25px;
+  }
+  .project-card-content .card-desc {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .project-card-content .card-tech {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .github-link .ico {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .github-link span a {
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 20px;
+  }
+  .live-preview-link .ico {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .live-preview-link span a {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,169 @@
+/* :root {
+  --dark: #42446e;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+  --heading-font: "Roboto Slab", serif;
+  --para-font: "Darker Grotesque", sans-serif;
+}
+
+.contact-section {
+  background-color: #434557;
+  padding: 50px 0;
+  position: relative;
+  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.contact-section h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--heading-font);
+}
+
+.contact-section p {
+  color: var(--normal);
+  font-weight: bold;
+  font-size: 25px;
+  font-family: var(--para-font);
+  text-align: center;
+  font-weight: lighter;
+}
+
+.contact-heading-line {
+  width: 5px;
+  height: 50px;
+  background-color: var(--normal);
+  border-radius: 10px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 60px 0 0 0;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.card-content h1 {
+  color: var(--normal);
+  font-family: var(--heading-font);
+  font-size: 25px;
+}
+
+.card-content p a {
+  color: var(--normal);
+  font-family: var(--para-font);
+  font-size: 25px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    
+  }
+}
+@media (max-width: 480px) {
+  .contact-section {
+    
+  }
+} */
+:root {
+  --dark: #42446e;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+  --heading-font: "Roboto Slab", serif;
+  --para-font: "Darker Grotesque", sans-serif;
+}
+
+.contact-section {
+  background-color: #434557;
+  padding: 50px 0;
+  position: relative;
+  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.contact-section h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--heading-font);
+}
+
+.contact-section p {
+  color: var(--normal);
+  font-weight: bold;
+  font-size: 25px;
+  font-family: var(--para-font);
+  text-align: center;
+  font-weight: lighter;
+}
+
+.contact-heading-line {
+  width: 5px;
+  height: 50px;
+  background-color: var(--normal);
+  border-radius: 10px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 60px 0 0 0;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.card-content h1 {
+  color: var(--normal);
+  font-family: var(--heading-font);
+  font-size: 25px;
+}
+
+.card-content p a {
+  color: var(--normal);
+  font-family: var(--para-font);
+  font-size: 25px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    clip-path: polygon(0 15%, 50% 5%, 100% 15%, 100% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    clip-path: polygon(0 5%, 25% 0, 100% 5%, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%); */
+  }
+}

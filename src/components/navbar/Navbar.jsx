@@ -3,6 +3,9 @@ import "./Navbar.css";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FormatAlignRightIcon from "@mui/icons-material/FormatAlignRight";
+import BackspaceIcon from "@mui/icons-material/Backspace";
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,26 +28,39 @@ const Navbar = () => {
 
   return (
     <nav className={`top-nav ${scrolled ? "scrolled" : ""}`}>
-      <div className="container">
+      <div
+        className="container"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="d-flex justify-content-between">
           <div className="d-flex">
-            <IntegrationInstructionsIcon className="fs-3" />
-            <a className="top-nav-para" href="/" style={{ textDecoration:"none" }}>Ali's Portfolio</a>
+            <IntegrationInstructionsIcon className="fs-3 logo-icon" />
+            <a
+              className="top-nav-para"
+              href="/"
+              style={{ textDecoration: "none" }}
+            >
+              Ali's Portfolio
+            </a>
           </div>
           <div className={`top-nav-links ${open ? "open" : ""}`}>
-            <a href="#about" onClick={() => setOpen(false)}>
-              Home
-            </a>
-            <a href="#company" onClick={() => setOpen(false)}>
+            <a href="#About" onClick={() => setOpen(false)}>
               About Me
             </a>
-            <a href="#ideas" onClick={() => setOpen(false)}>
+            <a href="#tech-stack" onClick={() => setOpen(false)}>
               Tech Stack
             </a>
-            <a href="#guarantee" onClick={() => setOpen(false)}>
+            <a href="#projects" onClick={() => setOpen(false)}>
               Projects
             </a>
-            <a href="#stratigies" onClick={() => setOpen(false)}>
+            <a href="#contact" onClick={() => setOpen(false)}>
               Contact Me
             </a>
             <div className="d-flex gap-2 ">
@@ -60,7 +76,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="top-nav-toggle" onClick={toggleNavbar}>
-            {open ? "X" : "☰"}
+            {open ? <BackspaceIcon /> : <FormatAlignRightIcon />}
           </div>
         </div>
       </div>

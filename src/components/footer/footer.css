@@ -1,0 +1,61 @@
+:root {
+  --dark: #42446e;
+  --light: #576cbc;
+  --normal: #a5d7e8;
+   --heading-font: "Roboto Slab", serif;
+  --para-font: "Darker Grotesque", sans-serif;
+}
+.footer-section{
+  background-color: #434557;
+}
+.footer-section div {
+  flex-wrap: wrap;
+}
+.footer-section div .logo-icon-footer {
+  color: var(--normal);
+}
+.number{
+    color: var(--normal);
+    font-family: var(--para-font);
+}
+.mail{
+    color: var(--normal);
+    font-family: var(--para-font);
+    cursor: pointer;
+}
+.social .icon-1 , .icon-2{
+  color: var(--normal);
+  transition: 0.3s;
+}
+.social .icon-1:hover , .icon-2:hover{
+  color: var(--light);
+  cursor: pointer;
+}
+.last-line-footer{
+    color: var(--normal);
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+  .left-side {
+    width: 100%;
+  }
+  .footer-section div {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-section div .logo-icon-footer {
+  color: var(--normal);
+  margin-bottom: 20px;
+}
+  .right-side {
+    width: 100%;
+  }
+}
+@media (max-width: 476px) {
+  .mail{
+    width: 100%;
+  }
+  .mail p{
+    text-align: center;
+  }
+}
